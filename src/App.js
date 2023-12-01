@@ -1,19 +1,21 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from './components/Header/Header'
+import Main from "./components/Main/Main";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <div className="App flex flex-col">
       <header className="header">
-        <div className="header__logo bg-green-300 py-3">
-          <p>logo</p>
-        </div>
+        <Header />
       </header>
       <main className="main flex">
-        <div className="main__sidebar bg-green-100">sidebar</div>
-        <div className="w-full">content</div>
+        <Sidebar />
+        <Main />
       </main>
       <footer>
-        <h1>Footer</h1>
+        <Footer />
       </footer>
     </div>
   );
